@@ -100,7 +100,8 @@
 								<td colspan="3">
 									<button type="submit" class="btn btn-dark btn-block" @if($product->is_ready !== 1) disabled @endif >
 										<i class="fas fa-shopping-cart"></i> Masukan
-										Keranjang</button>
+										Keranjang
+									</button>
 								</td>
 							</tr>
 						</table>

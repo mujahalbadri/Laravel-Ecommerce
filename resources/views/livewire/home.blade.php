@@ -29,11 +29,12 @@
 		<h3><strong>Pilih Brand</strong></h3>
 		<div class="row mt-4">
 			@foreach ($brands as $brand)
-			<div class="col">
+			<div class="col-md-3 mb-3">
 				<a href="{{ route('products.brand', $brand->id ) }}">
 					<div class="card shadow-sm">
 						<div class="card-body text-center">
-							<img src="{{ url('assets/brand') }}/{{ $brand->gambar }}" alt="Brand Image" class="img-fluid">
+							<img src="{{ url('assets/brand') }}/{{ $brand->gambar }}" alt="Brand Image"
+								class="img-fluid">
 						</div>
 					</div>
 				</a>
@@ -45,12 +46,13 @@
 	{{-- BEST PRODUCT --}}
 	<section class="product mt-5 mb-5">
 		<h3><strong>Best Products</strong>
-			<a href="{{ route('products') }}" class="btn btn-dark float-right"><i class="fas fa-eye"></i> Lihat Semua</a>
+			<a href="{{ route('products') }}" class="btn btn-dark float-right"><i class="fas fa-eye"></i> Lihat
+				Semua</a>
 		</h3>
 		<div class="row mt-4">
 			@foreach ($products as $product)
 			<div class="col-md-3">
-				<div class="card">
+				<div class="card mb-3">
 					<div class="card-body text-center">
 						<img src="{{ url('assets/product') }}/{{ $product->gambar }}" alt="Best Product Image"
 							class="img-fluid w-100">
@@ -62,7 +64,8 @@
 						</div>
 						<div class="row mt-2">
 							<div class="col-md-12">
-								<a href="{{ route('products.detail', $product->id) }}" class="btn btn-dark btn-block">Detail</a>
+								<a href="{{ route('products.detail', $product->id) }}"
+									class="btn btn-dark btn-block">Detail</a>
 							</div>
 						</div>
 					</div>
