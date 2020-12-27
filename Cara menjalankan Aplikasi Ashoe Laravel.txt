@@ -1,0 +1,8 @@
+Cara menjalankan aplikasi toko online 'Ashoe' :
+1. Ekstrak zip kedalam C:/Xampp/htdocs
+2. Buka Xampp, nyalakan apache dan mysql
+3. Buka browser masuk ke alamat url localhost/phpmyadmin
+4. import database ashoe.sql didalam folder C:/Xampp/htdocs/Ashoe/database
+5. Masuk folder C:/Xampp/htdocs/Ashoe klik kanan lalu buka terminal
+6. ketik "php artisan serve" pada terminal
+7. masukan alamat url "http://127.0.0.1:8000/" pada browser
