@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 27, 2020 at 10:56 AM
+-- Generation Time: Feb 12, 2021 at 10:53 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ashoe`
+-- Database: `toko_spant`
 --
 
 -- --------------------------------------------------------
@@ -108,7 +108,8 @@ CREATE TABLE `orders` (
 
 INSERT INTO `orders` (`id`, `kode_pemesanan`, `status`, `total_harga`, `kode_unik`, `user_id`, `created_at`, `updated_at`) VALUES
 (4, 'AS-4', '2', 4620000, 145, 1, '2020-12-27 01:04:50', '2020-12-27 01:14:11'),
-(6, 'AS-6', '1', 2038000, 602, 1, '2020-12-27 01:29:31', '2020-12-27 01:36:05');
+(6, 'AS-6', '1', 2038000, 602, 1, '2020-12-27 01:29:31', '2020-12-27 01:36:05'),
+(7, 'AS-7', '1', 4076000, 685, 1, '2021-02-12 02:42:51', '2021-02-12 02:43:04');
 
 -- --------------------------------------------------------
 
@@ -133,7 +134,8 @@ CREATE TABLE `order_details` (
 
 INSERT INTO `order_details` (`id`, `jumlah_pesanan`, `total_harga`, `nomer_sepatu`, `product_id`, `order_id`, `created_at`, `updated_at`) VALUES
 (7, 3, 4620000, 43, 2, 4, '2020-12-27 01:04:50', '2020-12-27 01:04:50'),
-(9, 1, 2038000, 43, 3, 6, '2020-12-27 01:29:31', '2020-12-27 01:29:31');
+(9, 1, 2038000, 43, 3, 6, '2020-12-27 01:29:31', '2020-12-27 01:29:31'),
+(10, 2, 4076000, 43, 3, 7, '2021-02-12 02:42:51', '2021-02-12 02:42:51');
 
 -- --------------------------------------------------------
 
@@ -288,13 +290,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `products`
